@@ -1,42 +1,62 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  width: 100%;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  width: 50px;
+  height: 50px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: #680a0a !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar-light .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
-.card {
-  padding: 2em;
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.read-the-docs {
-  color: #888;
+.form-control {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #000;
+}
+
+.form-control::placeholder {
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.container {
+  color: #680a0a;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(255, 255, 254);
+  height: 40vh;
+}
+.form-group {
+  color: #fcfafa;
+}
+.dataCard {
+  width: 100%;
+  background-color: aliceblue;
+  color: #000;
+  padding: 20px;
+  border: 1px solid rgb(184, 181, 181);
+  border-radius: 10px;
 }
